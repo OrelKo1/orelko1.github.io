@@ -1,0 +1,181 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #2a3e4c; /* Dark Slate Blue */
+    color: #f1f1f1; /* Light White */
+    scroll-behavior: smooth;
+}
+
+/* Floating Menu */
+.floating-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(42, 62, 76, 0.9); /* Semi-transparent */
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.floating-menu ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.floating-menu ul li {
+    margin: 0 20px;
+}
+
+.floating-menu ul li a {
+    color: #00bfa5; /* Teal */
+    font-size: 1.2em;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.floating-menu ul li a:hover {
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #2e3d48, #324b57);
+    color: #f1f1f1;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+}
+
+.hero-bio {
+    font-size: 1.3em;
+    color: #d1d1d1;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+/* Bio Section */
+.bio-section {
+    padding: 60px 20px;
+    background-color: #344956;
+    text-align: center;
+}
+
+.bio-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #f1f1f1;
+}
+
+.bio-description {
+    font-size: 1.2em;
+    color: #d1d1d1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Projects Section */
+.projects-section {
+    padding: 60px 20px;
+    background-color: #2a3e4c;
+    text-align: center;
+}
+
+.projects-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-box {
+    background-color: #344956;
+    padding: 20px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.project-box:hover {
+    background-color: #3e586b;
+    transform: scale(1.05);
+}
+
+.project-content h3 {
+    font-size: 1.6em;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.project-content p {
+    font-size: 1.1em;
+    color: #d1d1d1;
+}
+.project-box a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+}
+
+
+
+/* Resume Section */
+.resume-section {
+    background-color: #344956;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.resume-section h2 {
+    font-size: 2.5em;
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.download-btn {
+    background-color: #00bfa5;
+    color: #ffffff;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: #00897b;
+}
+
+/* Footer */
+footer {
+    padding: 30px;
+    background-color: #1f2b34;
+    color: #d1d1d1;
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.8em;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
