@@ -2,156 +2,318 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Orel Kozachi | Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Orel Kozachi Portfolio</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple touch icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
 </head>
 
-<body>
+<body class="index-page">
 
-    <!-- Floating Navigation Menu -->
-    <nav class="floating-menu">
-        <div class="container">
-            <ul>
-                <li><a href="#bio-section">About Me</a></li>
-                <li><a href="#projects-section">My Projects</a></li>
-                <li><a href="#resume-section">Resume</a></li>
-            </ul>
-        </div>
-    </nav>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <!-- Full-Width Hero Section -->
-    <header class="hero-section">
-        <div class="container">
-            <h1>Orel Kozachi</h1>
-            <p class="hero-bio">Junior Software Engineer | Passionate about Crafting Efficient Solutions</p>
-            <p>Website still under construction, sorry if its not the prettiest.</p>
-        </div>
-    </header>
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 class="sitename">O.K</h1>
+      </a>
 
-    <!-- Bio Section -->
-    <section id="bio-section" class="bio-section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p class="bio-description">I am a dedicated third-year(out of a 4-year) Computer Science student at the Open University of
-                Israel, maintaining high academic performance. With a solid foundation in software engineering
-                principles and hands-on experience in various projects, I am passionate about applying my skills to
-                real-world challenges. I am actively seeking full-time or part-time opportunities to contribute to
-                innovative projects and further develop my expertise in the field.</p>
-        </div>
-    </section>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home<br></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#services">Projects</a></li>
 
-    <!-- Projects Section -->
-    <section id="projects-section" class="projects-section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-box">
-                    <a href="https://github.com/OrelKo1?tab=repositories" target="_blank">
-                        <div class="project-content">
-                            <h3>Main GitHub Page</h3>
-                            <p>Nothing special... just a link to my github repositories</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://github.com/OrelKo1/Assembler_Project" target="_blank">
-                        <div class="project-content">
-                            <h3>C-Based Assembler for Custom CPU</h3>
-                            <p>This project is a C-based assembler developed for a custom CPU as part of a systems
-                                programming lab course.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/Random_Quote_Generator" target="_blank">
-                        <div class="project-content">
-                            <h3>Random Quote Generator</h3>
-                            <p>Generates and displays random inspirational quotes with each refresh, providing a
-                                continuous
-                                stream of motivational content.</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/Duplicate_Remover" target="_blank">
-                        <div class="project-content">
-                            <h3>Duplicate Remover</h3>
-                            <p>Cleans and deduplicates large URL datasets by normalizing variations and removing
-                                duplicates,
-                                standardizing URLs to HTTP protocol.</p>
-                        </div>
-                    </a>
-                </div>
-                <!-- More Projects Here -->
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/E_Number_Extractor" target="_blank">
-                        <div class="project-content">
-                            <h3>E Number Extractor</h3>
-                            <p>Extracts and retrieves E-numbers from bulk text data, streamlining the processing of
-                                large
-                                datasets.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/Palindrome_Checker" target="_blank">
-                        <div class="project-content">
-                            <h3>Palindrome Checker</h3>
-                            <p>Verifies if a string or number reads the same forwards and backwards, efficiently
-                                checking
-                                for palindromic sequences.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/ToDo_List" target="_blank">
-                        <div class="project-content">
-                            <h3>To-Do List</h3>
-                            <p>An advanced TO-DO list application built with HTML, CSS, and JavaScript, featuring
-                                dynamic
-                                task management and an intuitive user interface.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/Stop_Watch" target="_blank">
-                        <div class="project-content">
-                            <h3>Stop Watch</h3>
-                            <p>A basic stopwatch application for tracking elapsed time with an intuitive interface.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="project-box">
-                    <a href="https://orelko1.github.io/Color_Changer" target="_blank">
-                        <div class="project-content">
-                            <h3>Color Changer</h3>
-                            <p>Allows users to change the color of webpage elements easily, enhancing visual appeal or
-                                matching design requirements.</p>
-                        </div>
-                    </a>
-                </div>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
+
+      <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up"
+        data-aos-delay="100">
+        <h2>Orel Kozachi</h2>
+        <p><span class="typed" data-typed-items="Software Developer, Freelancer, Student"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-md-6">
+
+            <div class="row justify-content-between gy-4">
+              <div class="col-lg-5">
+                <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-7 about-info">
+                <p><strong>Name: </strong> <span>Orel Kozachi</span></p>
+                <p><strong>Profile: </strong> <span>Junior Software Engineer</span></p>
+                <p><strong>Email: </strong> <span>OrelKozachi@Gmail.com</span></p>
+                <p><strong>Phone: </strong> <span>(972)0537572774</span></p>
+              </div>
             </div>
+
+            <div class="skills-content skills-animation">
+
+              <h5>Skills</h5>
+
+              <div class="progress">
+                <span class="skill"><span>JavaScript</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>HTML</span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+              <div class="progress">
+                <span class="skill"><span>Python</span> <i class="val">75%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                  </div>
+                </div>
+              </div><!-- End Skills Item -->
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="about-me">
+              <h4>About me</h4>
+              <p>
+                I am a dedicated second-year Computer Science student at the Open University of Israel, maintaining high
+                academic performance.
+              </p>
+              <p>
+                With a solid foundation in software engineering principles and hands-on experience
+                in various projects, I am passionate about applying my skills to real-world challenges.
+              </p>
+              <p>
+                I am actively
+                seeking full-time or part-time opportunities to contribute to innovative projects and further develop my
+                expertise in the field.
+              </p>
+            </div>
+          </div>
         </div>
-    </section>
+
+      </div>
+
+    </section><!-- /About Section -->
 
     <!-- Resume Section -->
-    <section id="resume-section" class="resume-section">
-        <div class="container">
-            <h2>Resume</h2>
+    <section id="resume" class="resume section">
 
-            <a href="Orel_Kozachi_CV.pdf" class="download-btn" download>Download Resume</a>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
+        <a href="assets\pdf\Orel_Kozachi_CV.pdf" class="btn btn-primary btn-lg" download>
+          <i class="bi bi-download"></i> Download Resume
+        </a>
+      </div>
+
+    </section><!-- End Resume Section -->
+
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-github"></i> 
+              </div>
+              <a href="https://github.com/OrelKo1?tab=repositories" class="stretched-link" target="_blank">
+                <h3>Main GitHub Page</h3>
+              </a>
+              <p>Nothing special... just a link to my github repositories</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-quote"></i> 
+              </div>
+              <a href="https://orelko1.github.io/Random_Quote_Generator" class="stretched-link" target="_blank">
+                <h3>Random Quote Generator</h3>
+              </a>
+              <p>Generates and displays random inspirational quotes with each refresh, providing a continuous stream of
+                motivational content.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-scissors"></i> 
+              </div>
+              <a href="https://orelko1.github.io/Duplicate_Remover" class="stretched-link" target="_blank">
+                <h3>Duplicate Remover</h3>
+              </a>
+              <p>Cleans and deduplicates large URL datasets by normalizing variations and removing duplicates,
+                standardizing URLs to HTTP protocol.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-card-list"></i> 
+              </div>
+              <a href="https://orelko1.github.io/E_Number_Extractor" class="stretched-link" target="_blank">
+                <h3>E Number Extractor</h3>
+              </a>
+              <p>Extracts and retrieves E-numbers from bulk text data, streamlining the processing of large datasets.
+              </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-arrow-repeat"></i> 
+              </div>
+              <a href="https://orelko1.github.io/Palindrome_Checker" class="stretched-link" target="_blank">
+                <h3>Palindrome Checker</h3>
+              </a>
+              <p>Verifies if a string or number reads the same forwards and backwards, efficiently checking for
+                palindromic sequences.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-check2-square"></i> 
+              </div>
+              <a href="https://orelko1.github.io/ToDo_List" class="stretched-link" target="_blank">
+                <h3>To-Do List</h3>
+              </a>
+              <p>An advanced TO-DO list application built with HTML, CSS, and JavaScript, featuring dynamic task
+                management and an intuitive user interface.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-stopwatch"></i> 
+              </div>
+              <a href="https://orelko1.github.io/Stop_Watch" class="stretched-link" target="_blank">
+                <h3>Stop Watch</h3>
+              </a>
+              <p>A basic stopwatch application for tracking elapsed time with an intuitive interface.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-palette"></i> 
+              </div>
+              <a href="https://orelko1.github.io/Color_Changer" class="stretched-link" target="_blank">
+                <h3>Color Changer</h3>
+              </a>
+              <p>Allows users to change the color of webpage elements easily, enhancing visual appeal or matching design
+                requirements.</p>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon">
+                <i class="bi bi-github"></i> 
+              </div>
+              <a href="https://github.com/OrelKo1/Assembler_Project" class="stretched-link" target="_blank">
+                <h3>C-Based Assembler for Custom CPU</h3>
+              </a>
+              <p>This project is a C-based assembler developed for a custom CPU as part of a systems
+                programming lab course.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+
         </div>
-    </section>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Orel Kozachi. All rights reserved.</p>
-    </footer>
+    </section><!-- /Services Section -->
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/typed.js/typed.umd.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <!-- Main JS File -->
+    <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
